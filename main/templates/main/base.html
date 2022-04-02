@@ -1,0 +1,127 @@
+{% load static %}
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fa/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <title>Document</title>
+</head>
+  
+<body class = "mt-5 pt-5" id="bg" style="background-image: url('{% static 'images/worshippers.jpg' %}');" width ="100%">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <!-- Brand -->
+
+    <a class="navbar-brand" href="{% url 'home' %}">
+      <img src="{% static 'images/logo.png' %}" alt="PCG Logo" style="width:40px;" class="rounded-pill">
+    </a>
+
+
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto ">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'home' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Events</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="{% url 'loginuser' %}">Login/Registration</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Media</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Ministries</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Donate</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div>
+    {% if messages %}
+       {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+       {% endfor %}
+    {% endif %}
+{% block content %} {% endblock content %}
+</div>
+<!-- footer -->
+<footer>
+  <div class="footer">
+    <div class="container">
+    <div class="row">
+      <div class="footer_col_1">
+				<h3>Reach us</h3>
+        <ul class="link-list">
+          <li class="list-item">c/o Presbyterian Church of Ghana</li>
+          <li class="list-item">Bethel Congregation-Mpatasie</li>
+          <li class="list-item">Kumasi, Ghana</li>
+          <li class="list-item"><a href="#email">Email:@bethelcongregation.org</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer_col_2">
+				<img src="{% static 'images/logo.png' %}" alt="Presbyterian-logo" >
+				<h3>Presbyterian Church of Ghana</h3>
+			</div>
+
+      <div class="footer_col_3">
+				<h3>Follow Us</h3>
+				<ul class="social_list">
+					<li><a href="#twitter" class="social_link"><i class="fab fa-twitter"></i></li></a>
+					<li><a href="#instagram" class="social_link"><i class="fab fa-instagram"></i></li></a>
+					<li><a href="#facebook" class="social_link"><i class="fab fa-facebook"></i></li></a>
+					<li><a href="#youtube" class="social_link"><i class="fab fa-youtube"></i></li></a><br><br>
+				</ul>
+			</div>
+
+      <div class="footer_col_3">
+				<h3>Useful Links</h3>
+				<ul class="link_list">
+					<li class="foot_item"><a href="#Home" class="link">Home</a></li>
+					<li class="foot_item"><a href="#Blog Post" class="link">Blog Post</a></li>
+					<li class="foot_item"><a href="#Media" class="link">Media</a></li>
+					<li class="foot_item"><a href="#Join us" class="link">Join us</a></li>
+          <li class="foot_item"><a href="#Daily-devotion" class="link">Daily devotion</a></li>
+				</ul>
+			</div>
+
+    </div>
+    <div>
+    <hr>
+    <p class="copyright">copyright PCG-MPATASIE  All Rights Reserved</p>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/mdb.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'fa/js/all.min.js' %}"></script>
+<script src="{% static 'js/base.js' %}"></script>
+</body>
+</html>
