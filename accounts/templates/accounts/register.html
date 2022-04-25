@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="row justify-content-center mt-5 text-white ">
+        <div class="col-md-5">
+                <h2>Register</h2>
+            <span>Home  >  Login  > Register </span>
+        </div>
+</div>
+    <div class="row justify-content-center mt-5 bg-white pt-5 ">
+      <div class="col-md-5">
+          <h4 style="color:#000066">Registration Open</h4><br><br>
+        <div class="text-center">
+    Existing Member? <a style="color:#ff3300" href="{% url 'loginuser' %}">Login</a>
+         </div>
+           <h2 style="color:#000066">Member<br>Register</h2><br><br>
+            <form method="POST">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Join Us Today</legend>
+                    {{ form|crispy }}
+                </fieldset>
+                <div class="form-group">
+                    <button class="btn btn-outline-info" type="submit">Sign Up</button>
+                </div>
+            </form>
+          </div>
+      </div>
+{% endblock content %}
+
+

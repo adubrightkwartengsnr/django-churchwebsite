@@ -1,0 +1,41 @@
+Website Features -- Mpatasie Presby
+Pages
+. Home
+.About Page
+.Events 
+.Login/Registration
+.Media 
+.Groups
+.Ministries
+.More 
+.Donate 
+
+Home Page Features
+.Background picture
+.Nav
+.Daily Devotion
+.Upcoming Events and Announcements
+.Omline Quiz/Bible Hymnals etc
+.Footer
+
+About Page
+.History of the Church
+.Leaders of the church and their brief bio
+.Mission and Vision of The Church
+.PCG Theme of the year in focus
+.Footer
+
+ Events Page 
+.Upcoming Events 
+
+Departments
+.Groups and Leaders in the group
+.Commitees 
+
+Ministries
+.Scholarship
+.Funerals and wedding donations
+.Tithes and offerings
+
+Donate 
+

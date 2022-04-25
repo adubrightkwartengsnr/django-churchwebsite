@@ -1,0 +1,33 @@
+.card{
+  border-radius: 20px;
+}
+button{
+  width: 100% !important;
+  border-radius: 10px !important;
+  border: 2px #ffffff solid !important;
+}
+.input-field input{
+  border-bottom: 2px #ffffff solid !important;
+  border-left: 2px #ffffff solid !important;
+  border-right: 2px #ffffff solid !important;
+  border-top: 2px #ffffff solid !important;
+  padding: 5px !important;
+  border-radius: 10px !important;
+  height: 30px !important;
+  color: #ffffff;
+  margin-bottom: 20px !important;
+  /*background-color: #ffffff;*/
+}
+.input-field label{
+  margin-left: 10px !important;
+}
+span label{
+  color: #ffffff;
+  font-size: 25px;
+}
+nav input{
+
+}
+#form-search{
+  height: 25px !important;
+}

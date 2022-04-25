@@ -1,0 +1,263 @@
+
+body,html{
+margin: 0;
+padding: 0px;
+font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+/* Home Page */
+
+#bg {
+background-repeat: no-repeat;
+background-size: 1800px 900px;
+background-position: center;
+background-attachment: fixed;
+}
+
+/* Header  */
+
+.header {
+    font-weight: bold;
+    color: white;
+    font-family: cursive;
+    margin: 10px 30px;
+    padding: 20px ;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+Buttons
+#btn{
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 50px 200px;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: transform 200ms ease-in-out;
+    position: relative;
+    display: grid;
+}
+
+#btn:hover{
+    transform: scale(1.1);
+}
+
+/* About Us */
+
+.abouts {
+    background:white;
+    padding: 10px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about-title{
+    color: midnightblue;
+}
+
+/* Daily devotion */
+.daily{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding: 10px 10px;
+    margin: 80px 40px;
+}
+
+.devotional-header{
+    color: tomato;
+}
+
+/* welfare box */
+
+.welfare-box{
+    background: white;
+    padding: 20px;
+    font-weight: bold;
+    
+
+}
+.welfare-title{
+    color: darkcyan;
+    
+}
+
+/* Announcements container */
+
+.announcements-container{
+    position: relative;
+    color: white;
+    /* padding: 20px 20px;
+    align-content: center; */
+
+}
+
+/* announcements */
+.announcements{
+    display: none;
+    padding: 80px;
+    text-align: center;
+    border-radius: 20%;
+
+}
+
+.announcement-title{
+    color: tomato;
+
+}
+.announcement-subtitle{
+    color: turquoise;
+}
+
+
+
+/* Next and previous buttons */
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* position the "next button" to the right */
+
+.next{
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px ;
+}
+
+/* buttons hover */
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* The dot/bullerts/indicators  */
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot  */
+
+.active, .dot:hover{
+    background-color: #717171;
+    
+}
+
+/* Footer */
+.footer{
+    color: white;
+    font-size: 16px;
+    background: darkblue;
+    /* align-content: center; */
+    padding: 60px 0 20px;
+
+}
+.footer h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.link_list, .social_list{
+    list-style-type: none;
+}
+
+.link{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+/* Social links */
+
+.social_link, .link{
+    transition: transform 20ms ease-in-out;
+    color: white;
+}
+
+.social_link:hover{
+    transform: scale(1.1);
+}
+
+.footer_col_1, .footer_col_2, .footer_col_3{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer_col_1{
+    flex-basis: 30%;
+    padding: auto;
+    margin: auto;
+}
+
+.list-item{
+    list-style: none;
+   
+}
+
+.footer_col_2{
+    flex: 1;
+    padding: 15px;
+}
+
+.footer_col_2 img{
+    width: 180px;
+    margin-bottom: 5px;
+}
+/* .footer-img{
+    border-radius: 50%;
+    align-content: center;
+    padding: 60px 0 60px;
+    width: 100%;
+    margin-top: 20px;
+    
+} */
+
+.footer_1, .footer_col_2, .footer_col_3{
+    flex-basis: 12%;
+}
+
+
+hr{
+    background: white;
+    border: none;
+ 	height: 1px;
+ 	margin: 20px 0;
+}
+
+.footer p{
+    font-weight: bold;
+}
+
+.copyright{
+    text-align: center;
+}
+
+/* Account Session css*/
+.login-title{
+color:white;
+}
+
+.portfolio_heading{
+color:white;
+}

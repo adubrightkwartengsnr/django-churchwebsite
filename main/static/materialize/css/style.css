@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: '' sans-serif;
+}
+body{
+  height: 100vh;
+  background-image: radial-gradient(circle farthest-corner at -3.1% -4.3%, rgba(57, 255, 186, 1) 0%, rgba(21, 38, 82,1) 90%);
+}
+.wrapper{
+  height: 100vh;
+}
+.myColor{
+  background-image: linear-gradient(to right, #f83600 50%, #f9d423 150%);
+}
+.myShodow{
+  box-shadow: 0 5px 10px #111;
+}
+.myBtn{
+  border-radius: 50px !important;
+  width: 100% !important;
+  font-weight: bold;
+  font-size: 20px;
+  color: white !important;
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  border: none;
+}
